@@ -115,7 +115,7 @@ void loop() {
     if (freq3 >= 400 && freq3 <= 800) inRangeCount++;
 
     if (inRangeCount >= 2) {
-      Serial.println("→ [몬8소리 감지됨: Top3 중 2개 이상 400~800Hz]");
+      Serial.println("→ [모기 소리 감지됨: Top3 중 2개 이상 400~800Hz]");
       detections[detectionCount].micIndex = j;
       detections[detectionCount].peakValue = peakVal1;
       detectionCount++;
